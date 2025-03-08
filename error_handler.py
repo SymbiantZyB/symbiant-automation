@@ -40,6 +40,15 @@ def handle_exception(exception: Exception):
     return problem_details
 
 
+def log_custom_error(custom_error_message: str):
+    """
+    Logs a custom error message to the error log file.
+
+    Args:
+        custom_error_message (str): Custom description of the error.
+    """
+    logging.error(f"Custom Error: {custom_error_message}")
+
 # Example usage
 
 def generate_problem_details(type: str, title: str, status: int, detail: str, instance: str = None) -> dict:
