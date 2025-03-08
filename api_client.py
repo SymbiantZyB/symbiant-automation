@@ -1,6 +1,7 @@
 import requests
 from requests.exceptions import HTTPError, Timeout, RequestException
-i
+
+iimport logging
 import os
 
 class APIClient:
