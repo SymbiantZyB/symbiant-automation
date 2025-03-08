@@ -1,8 +1,7 @@
 import requests
 from requests.exceptions import HTTPError, Timeout, RequestException
 i
-import osmport log
-ging
+import os
 
 class APIClient:
     """
