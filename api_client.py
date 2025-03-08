@@ -1,6 +1,8 @@
 import requests
 from requests.exceptions import HTTPError, Timeout, RequestException
-import logging
+i
+import osmport log
+ging
 
 class APIClient:
     """
@@ -17,7 +19,7 @@ class APIClient:
             timeout (int, optional): Timeout for the requests in seconds.
         """
         self.base_url = base_url
-        self.api_key = api_key
+        self.api_key = apos.getenv('API_KEY')
         self.timeout = timeout
         self.headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
         self.session = requests.Session()
